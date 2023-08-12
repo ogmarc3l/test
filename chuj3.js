@@ -1,11 +1,1 @@
-(function($){$.fn.extend({copy:function(cb){$(this).click(function(){var elem=$(this)
-    var val=copyValue(elem,elem.data('value'))
-    if(val)cb(val)})}})
-    $('[data-copy]').click(function(){var elem=$(this)
-    copyValue(elem,elem.data('copy'))})
-    function copyValue(elem,value){var input=$('<input>')
-    $('body').append(input)
-    input.val(value).select()
-    document.execCommand("copy")
-    input.remove()
-    return value}})(jQuery)
+nie ma

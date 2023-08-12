@@ -1,0 +1,6 @@
+$(function(){$('[data-modal]:not(.modal)').click(function(){var id=$(this).data('modal')
+$('.modal[data-modal="'+id+'"]').addClass('active')
+$('body').addClass('modal_open')})
+$('.modal .modal_main_head__close').click(function(){$(this).parents('.modal').removeClass('active')
+$('body').removeClass('modal_open')})
+$('.modal .modal_main_head__close_x').click(function(){$(this).parents('.modal').removeClass('active')})})
